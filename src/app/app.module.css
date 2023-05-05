@@ -1,0 +1,7 @@
+.table {
+  width: 50vw;
+}
+
+.table tbody tr {
+  display: flex;
+}

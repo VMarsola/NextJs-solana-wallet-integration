@@ -6,7 +6,7 @@ import { TableProps } from "@/types/TableTypes";
 import { TableTitle } from "../TableTitle/page";
 import { TableTab } from "../TableTabs/page";
 import { TableRow } from "../TableRow/page";
-import { UseTable } from "../../../hooks/useTable";
+import { UseTable } from "../../hooks/useTable";
 
 export const Table: FC<TableProps> = ({ content, titles }) => {
   const { currentItems, handlePageClick, currentPage } = UseTable(content);

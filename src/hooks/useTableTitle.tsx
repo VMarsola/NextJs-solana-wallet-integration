@@ -1,9 +1,9 @@
 import { ReactNode } from "react";
 import { IoCalendarOutline, IoAppsSharp, IoLink } from "react-icons/io5";
 
-import { TableTitleProps } from "@/types/TableTitle";
+import { TableTitleProps } from "@/types/TableTypes";
 
-export const UseTable = () => {
+export const UseTableTitle = () => {
   const handleIcon = (icon: TableTitleProps["icon"]): ReactNode => {
     switch (icon) {
       case "quantity":

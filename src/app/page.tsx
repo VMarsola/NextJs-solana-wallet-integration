@@ -1,4 +1,4 @@
-import { useWallet } from "@/app/useWallet";
+import { useWallet } from "@/app/hooks/useWallet";
 import { TABLE_TITLES } from "../constants/table";
 import { Table } from "./components/Table/page";
 

@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 
 import { TableTitleList } from "@/types/TableTypes";
-import { UseTableTitle } from "../../../hooks/useTableTitle";
+import { UseTableTitle } from "@/app/hooks/useTableTitle";
 
 export const TableTitle: FC<TableTitleList> = ({ titles }) => {
   const { handleIcon } = UseTableTitle();

@@ -17,6 +17,7 @@ export function useWallet() {
         const data = account.data.parsed.info;
         return { title: data.mint, amount: data.tokenAmount.uiAmount };
       });
+
       return res;
     } catch (error) {
       console.error(error);

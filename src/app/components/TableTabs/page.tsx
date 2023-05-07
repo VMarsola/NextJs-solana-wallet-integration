@@ -8,11 +8,12 @@ export const TableTab: FC<
     <button
       onClick={onClick}
       id={id}
+      data-testid={id}
       className={`bg-white py-2 px-2  text-black text-center border-b-4 ${
         currentPage === Number(id) ? "border-green-600" : "border-transparent"
       } sm:px-6 hover:border-green-600`}
     >
-      Investmens
+      Investments
     </button>
   );
 };

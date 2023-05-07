@@ -1,5 +1,13 @@
 import React from "react";
 import { StoryFn, Meta } from "@storybook/react";
+import {
+  within,
+  userEvent,
+  findByTestId,
+  getAllByText,
+} from "@storybook/testing-library";
+import { expect } from "@storybook/jest";
+
 import { Table } from "./page";
 import { TableProps } from "@/types/TableTypes";
 
@@ -23,11 +31,23 @@ Default.args = {
     },
     {
       amount: 0.15,
-      title: "=QU1pbnQdGhpc0lz",
+      title: "QU1pbnQdGhpc0lz",
     },
     {
       amount: 1,
       title: "nQdGh=QU1pbpc0lz",
     },
   ],
+};
+
+Default.play = async ({ canvasElement }) => {
+  // Render the component
+  const canvas = within(canvasElement);
+  const clickTab = await canvas.findByTestId("2");
+
+  await userEvent.click(clickTab);
+  // Expect the desired content to be in the document
+
+  const itemFromRow2 = canvas.getByText("nQdGh=QU1pbpc0lz");
+  expect(itemFromRow2).toBeTruthy();
 };

@@ -1,14 +1,13 @@
-import { useWallet } from "@/app/hooks/useWallet";
-import { TABLE_TITLES } from "../constants/table";
-import { Table } from "./components/Table/page";
+import { Suspense } from "react";
+import { Table } from "./components/Table";
 
 export default async function Home() {
-  const { getTokenBalances, publicKey } = useWallet();
-  const fetchTokens = await getTokenBalances(publicKey);
-
   return (
     <>
-      <Table titles={TABLE_TITLES} content={fetchTokens ?? []} />
+      <Suspense fallback={<p>Loading...</p>}>
+        {/* @ts-expect-error Server Component */}
+        <Table />
+      </Suspense>
     </>
   );
 }

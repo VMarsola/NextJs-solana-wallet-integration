@@ -1,7 +1,7 @@
 import { TableRowProps } from "@/types/TableTypes";
 import { Meta, StoryFn } from "@storybook/react";
 
-import { TableRow } from "./page";
+import { TableRow } from ".";
 
 export default {
   title: "Components/TableRow",

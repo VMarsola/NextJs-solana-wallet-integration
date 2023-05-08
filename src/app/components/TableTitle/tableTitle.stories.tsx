@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, StoryFn } from "@storybook/react/";
 
-import { TableTitle } from "./page";
+import { TableTitle } from ".";
 import { TableTitleProps } from "../../../types/TableTypes";
 import { TABLE_TITLES } from "../../../constants/table";
 

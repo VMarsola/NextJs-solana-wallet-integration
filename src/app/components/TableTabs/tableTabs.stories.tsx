@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta, StoryFn } from "@storybook/react/";
 
-import { TableTab } from "./page";
+import { TableTab } from ".";
 import { TableTabProps } from "../../../types/TableTypes";
 
 export default {

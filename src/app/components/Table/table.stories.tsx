@@ -8,7 +8,7 @@ import {
 } from "@storybook/testing-library";
 import { expect } from "@storybook/jest";
 
-import { Table } from "./page";
+import { Table } from ".";
 import { TableProps } from "@/types/TableTypes";
 
 export default {

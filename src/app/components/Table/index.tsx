@@ -13,9 +13,8 @@ import { TableRow } from "../TableRow";
 
 export async function Table() {
   const { getTokenBalances, publicKey } = useWallet();
-  // const fetchTokens = await getTokenBalances(publicKey);
+  const fetchTokens = await getTokenBalances(publicKey);
 
-  const fetchTokens = TABLE_CONTENT;
   useWalletStore.setState({
     state: { wallet: fetchTokens ?? [], slicedWallet: fetchTokens ?? [] },
   });

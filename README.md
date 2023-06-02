@@ -1,8 +1,5 @@
-# Solana Credix
 
-<div align="center">
- <img  src="./public/logo.png"  style="padding:12px; border-radius: 8px" alt="ts" width="60"  height="60" />
-</div>
+
 
 ## Technologies Used
 
